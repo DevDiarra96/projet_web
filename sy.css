@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Roboto:wght@300&family=Josefin+Sans:ital,wght@1,300&family=Lexend:wght@500&family=Livvic:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+font-family: 'Abel', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0;
+	font-family: lato;
+}
+
+li 
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+#navbar
+{
+	background: transparent;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: 0.4s;
+}
+#navbar a
+{
+	float: left;
+	padding: 12px;
+	font-size: 18px;
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 1.2em;
+	
+}
+.barre 
+{
+    display: none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px ;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: red;
+}
+#navbar-right
+{
+	float: right;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#carouselexample
+{
+	margin-top: -8%;
+}
+.carousel-item img
+{
+	height: 600px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+#carouselexample
+{
+	margin-top: -8%;
+}
+.carousel-item img
+{
+	height: 400px;
+	width: 100%;
+}
+#navbar a
+{
+	
+	font-size: 1.3em;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	
+}
+#logo
+{
+	font-size: 2.2em;
+}
+#navbar-right
+{
+    position: fixed;
+  left: -100%;
+  top: 5rem;
+  flex-direction: column;
+  background-color: #606b64;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow:
+  0 10px 27px rgba(0, 0, 0, 0.05);
+
+}
+#navbar-right.active 
+{
+  left:0;
+}
+
+.nav-item
+{
+  margin: 2.5px 0;
+  
+}
+.barre 
+{
+  display: block;
+  cursor: pointer;
+}
+.barre.active .bar:nth-child(2)
+{
+  opacity: 0;
+}
+.barre.active .bar:nth-child(1) 
+{
+  transform: translateY(8px) rotate(45deg);
+}
+.barre.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+div:target
+{
+	padding-top: 7em;
+	margin-top: -7em;
+}
+.img
+{
+	height: 500px;
+	width: 100%;
+}
+.img1
+{
+	height: 150px;
+	width: 80%;
+	margin: auto;
+}
+.img2
+{
+	height: 200px;
+	width: 100%;
+}
+.img3
+{
+	height: 500px;
+	width: 100%;
+}
+/* Titre */
+h2
+{
+	font-weight: bold;
+	color: #606b64;
+	padding-bottom: 10px;
+	color: red;
+}
+h1,h3,h4
+{
+	color: #606b64;
+	font-weight: bold;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+	color: red;
+}
+.titre
+{
+	color: #606b64;
+	font-size: 2em;
+}
+section
+{
+	align-items: center;
+	text-align: center;
+}
+#presentation
+{
+	margin-top: 60px;
+	font-family: 'cabin', sans-serif;
+}
+.sys
+{
+	margin-top: 100px;
+	margin-bottom: -40px;
+	font-family: 'cabin', sans-serif;
+}
+.sys h2
+{
+	color: #606b64;
+	font-weight: bold;
+}
+.sys img
+{
+    width: 100%;
+	height: 100%;
+	padding: 10px; 
+}
+#syoil
+{
+	margin-top: 10px;
+	border: 3px  #606b64 solid;
+	border-radius: 10px;
+}
+#sytrans
+{
+	margin-top: 50px;
+	border: 3px  #606b64 solid;
+	border-radius: 10px;
+}
+span
+{
+	font-weight: bold;
+}
+.nonv
+{
+	margin-top: 70px;
+}
+
+
+.nonv-propos
+{
+	margin-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.group
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.group-contenu
+{
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: center;
+}
+.group-contenuo
+{
+	padding-top: 20px;
+	padding-left: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+#services
+{
+	margin-top: 100px;
+	font-family: 'cabin', sans-serif;
+}
+.services
+{
+	margin-bottom: 10px;
+}
+.card:hover
+{
+     transform: scale(1.05);
+    
+}
+
+.card-horizontal {
+  display: flex;
+ 
+}
+#propos
+{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: -70px;
+	/*background:  #606b64;*/
+	/*color: white;*/
+	padding: 30px;
+	padding-top: 0;
+	justify-content: center;
+	align-items: center;
+	font-family: 'cabin', sans-serif;
+}
+button
+{
+	
+	background-color:  #606b64;
+	color: white;
+	font-size: 15px;
+	margin-top: 5px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+button:hover
+{
+	transform: scale(1.05);
+}
+
+.content
+{
+	margin-top: 20px;
+	line-height: 1.5;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.img-propos
+{
+	margin-top: 13px;
+	position:relative;
+   
+}
+
+.holding
+{
+	width: 500px;
+	height: 300px;
+	margin-top: 70px;
+	padding: 10px;
+}
+
+#propos h1
+{
+	/*color: white;*/
+	padding-bottom: 10px;
+	padding-top:0;
+}
+.propos-body 
+{
+	margin-top: 50px;
+}
+
+
+#contact
+{
+	margin-top: 70px;
+	margin-bottom: 50px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+#adresse
+{
+	margin-top: 70px;
+	padding: 10px;
+	
+	border-radius: 10px;
+    padding-bottom: 12.4%;
+}
+#adresse h3
+{
+	padding-top:30%;
+	
+}
+#adresse p
+{
+	padding-bottom:13%;
+	padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	#presentation
+{
+	margin-top: 30px;
+	font-size: 1.7em;
+
+}
+#propos
+{
+
+	margin-top: 40px;
+	font-size: 1.5em;
+}
+
+.card-horizontal {
+  display: block;
+ 
+}
+
+.img-propos
+{
+	display: none;
+}
+.sys
+{
+	margin-top: 100px;
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+#services
+{
+	margin-top: 70px
+	font-size: 1.8em;
+	
+}
+.card-text
+{
+	font-size: 1.54em;
+}
+.img2
+{
+	height: 200px;
+	width: 100%;
+}
+.sys img
+{
+    width: 100%;
+	height: 300px;
+	padding: 10px; 
+}
+#contact
+{
+	margin-top: 50px;
+	padding: 10px;
+}
+label
+{
+	font-size: 1.3em;
+	margin-bottom: 5px;
+}
+#adresse
+{
+	margin-top: 50px;
+	padding: 10px;
+	border-radius: 10px;
+    padding-bottom: 12.4%;
+    font-size: 1.5em;
+}
+.group-contenuo
+{
+	padding-top: 1px;
+	padding-left: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+}
+
+.card-header
+{
+	background-color: #606b64;
+}
+.sy-title
+{
+	font-weight: bold;
+}
+form
+{
+	background-color: white;
+	padding: 30px;
+	border: 3px  #606b64 solid;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+form h1
+{
+	font-size: 20px;
+	color: red;
+}
+.separation
+{
+	width: 100%;
+	height: 2px;
+	background-color:  #606b64;
+}
+.corp-form
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.boite
+{
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+form .corp-form .gauche .boite input
+{
+	margin-top: 5px;
+	padding: 10px 5px 10px 40px;
+	border: 2px solid  #606b64;
+	border-radius: 5px;
+	outline: none;
+}
+form .corp-form .gauche .boite i
+{
+	position: absolute;
+	left: 0;
+	top: 25px;
+	padding: 29px 28px;
+	color:  #606b64;
+}
+textarea
+{
+	margin-top: 5px;
+	padding: 10px;
+	border:2px solid #606b64;
+	border-radius: 5px;
+	outline: none;
+	resize: none;
+	height: 82%;
+}
+.pied-form button
+{
+	
+	background-color:  #606b64;
+	color: white;
+	font-size: 15px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.pied-form button:hover
+{
+	transform: scale(1.05);
+}
+	footer
+{
+	background:  #606b64;
+	
+}
+a:link
+{
+	color:#fff;
+	text-decoration: none;
+}
+a:visited
+{
+	color:#fff;
+	text-decoration: 
+}
+a:hover
+{
+	color:#fff;
+	text-decoration: 
+}
+a:active
+{
+	color:#fff;
+	text-decoration: 
+}
+footer
+{
+	background:#606b64;
+	height: 2.8em;
+}
+
+a.active_underlined {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+
+.active_underlined a {
+  color: red;
+  border-bottom: 2px solid red;
+}
